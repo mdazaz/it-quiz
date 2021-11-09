@@ -1,4 +1,4 @@
-<nav class="navbar navbar-dark fixed-top bg-info">
+<nav class="navbar navbar-default navbar-static-top bg-info">
   <div class="container-fluid">
     <a class="navbar-brand" href="#">
       <img src="../assets/online_quiz.png" alt="" width="50" height="40" class="d-inline-block align-text-top">
@@ -83,11 +83,11 @@
       <h4 class="alert alert-info text-center">You may close this window now.</h4>
     </div>
     <hr />
-    <div class = "text-center row" *ngIf="mode!='result'">
-      <div class="col-4"></div>
-      <div class="col-2"><button class="btn btn-warning col-9" (click)="mode = 'quiz'">Quiz</button></div>
-      <div class="col-2"><button class="btn btn-info col-9" (click)="mode = 'review'">Review</button></div>
-      <div class="col-2"><button class="btn btn-success col-9" (click)="onSubmit();">Submit Quiz</button></div>
+    <div class = "text-center row mb-5" *ngIf="mode!='result'">
+      <div class="col-2"></div> 
+      <div class="col-3"><button class="btn btn-secondary" style="width:90%" (click)="mode = 'quiz'">Quiz</button></div>
+      <div class="col-3"><button class="btn btn-primary" style="width:100%" (click)="onSubmit();">Submit Quiz</button></div>
+      <div class="col-3"><button class="btn btn-info" style="width:90%" (click)="mode = 'review'">Review</button></div>      
     </div>
   </div>
 </div>
